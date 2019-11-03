@@ -5,10 +5,6 @@
     </div>
 </template>
 
-<style>
-
-</style>
-
 <script>
 import BottomNav from '../components/BottomNav'
 
@@ -21,3 +17,7 @@ export default {
     }
 }
 </script>
+
+<style>
+
+</style>

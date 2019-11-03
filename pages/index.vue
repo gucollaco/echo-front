@@ -1,62 +1,75 @@
 <template>
-  <div class="container">
-    <div>
-      <logo />
-      <h1 class="title">
-        echo-front
-      </h1>
-      <h2 class="subtitle">
-        My first-rate Nuxt.js project
-      </h2>
-      <div class="links">
-        <a
-          href="https://nuxtjs.org/"
-          target="_blank"
-          class="button--green"
-        >
-          Documentation
-        </a>
-        <a
-          href="https://github.com/nuxt/nuxt.js"
-          target="_blank"
-          class="button--grey"
-        >
-          GitHub
-        </a>
-      </div>
-    </div>
-  </div>
+	<v-app>
+		<v-container fluid>
+			<v-form
+				ref="form"
+				v-model="valid"
+				lazy-validation
+			>
+				<v-row
+					class="mb-6"
+					justify="center"
+					no-gutters
+				>
+					<v-col lg="4" md="6" sm="12">
+						<v-text-field
+							v-model="username"
+							:rules="usernameRules"
+							label="Login"
+							required
+						></v-text-field>
+						<v-text-field
+							v-model="password"
+							:rules="passwordRules"
+							type="password"
+							label="Senha"
+							required
+						></v-text-field>
+					</v-col>
+				</v-row>
+				<v-row
+					justify="center"
+					no-gutters
+				>
+					<v-col lg="4" md="6" sm="12">
+						<v-btn
+							:disabled="!valid"
+							color="primary"
+							@click="validate"
+						>
+							Entrar
+						</v-btn>
+					</v-col>
+				</v-row>
+			</v-form>
+		</v-container>
+	</v-app>
 </template>
 
 <script>
-import Logo from '~/components/Logo.vue'
-
 export default {
-  components: {
-    Logo
-  }
+	data: () => ({
+		valid: true,
+		username: '',
+		usernameRules: [
+			v => !!v || 'Insira seu usuário Unifesp'
+		],
+		password: '',
+		passwordRules: [
+			v => !!v || 'Insira sua senha Unifesp'
+		]
+	}),
+
+	methods: {
+		validate () {
+			if (this.$refs.form.validate()) {
+				console.log('oi')
+			}
+		}
+	}
 }
 </script>
 
 <style>
-.container {
-  margin: 0 auto;
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
 
-.subtitle {
-  font-weight: 300;
-  font-size: 42px;
-  color: #526488;
-  word-spacing: 5px;
-  padding-bottom: 15px;
-}
-
-.links {
-  padding-top: 15px;
-}
 </style>
