@@ -5,19 +5,29 @@
             grow
             fixed
         >
-            <v-btn>
+            <v-btn to="/food" nuxt>
+            <span>Food</span>
+            <v-icon>mdi-food</v-icon>
+            </v-btn>
+
+            <v-btn to="/calendar" nuxt>
+            <span>Calendar</span>
+            <v-icon>mdi-calendar-blank</v-icon>
+            </v-btn>
+
+            <v-btn to="/home" nuxt>
             <span>Home</span>
-            <v-icon>mdi-history</v-icon>
+            <v-icon>mdi-home</v-icon>
             </v-btn>
 
-            <v-btn>
-            <span>Favorites</span>
-            <v-icon>mdi-heart</v-icon>
+            <v-btn to="/classes" nuxt>
+            <span>Classes</span>
+            <v-icon>mdi-book-variant</v-icon>
             </v-btn>
 
-            <v-btn>
-            <span>Nearby</span>
-            <v-icon>mdi-map-marker</v-icon>
+            <v-btn to="/profile" nuxt>
+            <span>Profile</span>
+            <v-icon>mdi-account</v-icon>
             </v-btn>
         </v-bottom-navigation>
     </div>
@@ -29,7 +39,12 @@
 
 <script>
 export default {
-    name: "BottomNav"
+    name: "BottomNav",
+    data () {
+        return {
+            activeBtn: 2,
+        }
+    }
 }
 </script>
 

@@ -36,6 +36,7 @@
 							:disabled="!valid"
 							color="primary"
 							@click="validate"
+							to="/home" nuxt
 						>
 							Entrar
 						</v-btn>

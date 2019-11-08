@@ -1,20 +1,15 @@
 <template>
-    <div>
+    <v-app>
         <nuxt />
         <BottomNav />
-    </div>
+    </v-app>
 </template>
 
 <script>
 import BottomNav from '../components/BottomNav'
 
 export default {
-    components: { BottomNav },
-    data () {
-        return {
-            activeBtn: 1,
-        }
-    }
+    components: { BottomNav }
 }
 </script>
 
