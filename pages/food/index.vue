@@ -1,40 +1,63 @@
 <template>
     <v-container fluid>
-        <v-row no-gutters dense>
-            <v-col cols="10">
+        <v-row no-gutters>
+            <v-col cols="12">
                 <v-card
-                    color="#385F73"
+                    color="teal darken-3"
                     dark
-                    style="border-radius: 5px 0px 0px 5px"
+                    style="border-radius: 5px 5px 5px 5px"
                 >
                     <v-card-title class="headline">2 créditos</v-card-title>
                     <v-card-subtitle v-text="test"></v-card-subtitle>
+                    <v-card-actions>
+                        <v-btn
+                            text
+                            color="light-blue lighten-4"
+                        >
+                            Atualizar
+                        </v-btn>
+                    </v-card-actions>
                 </v-card>
             </v-col>
-            <v-col cols="2">
-                 <v-row
-                    class="flex-column fill-height"
-                    justify="center"
-                    style="border-radius: 0px 5px 5px 0px; background-color: #000"
-                >
-                    <v-col
-                        style="display:flex"
-                        class="flex-column justify-center"
+        </v-row>
+
+        <v-row class="mt-3" no-gutters>
+            <v-col cols="12">
+                <v-carousel hide-delimiters :show-arrows="false" style="border-radius: 5px 5px 5px 5px">
+                    <v-carousel-item
+                        v-for="(day, i) in days"
+                        :key="day"
                     >
-                        <v-btn icon>
-                            <v-icon size="45" style="color: #FFF">mdi-refresh</v-icon>
-                        </v-btn>
-                    </v-col>
-                </v-row>
-                <!-- <v-card
-                    color="#000"
-                    dark
-                    style="border-radius: 0px 5px 5px 0px"
-                >
-                    <v-btn icon>
-                        <v-icon size="45">mdi-refresh</v-icon>
-                    </v-btn>
-                </v-card> -->
+                        <v-sheet
+                            color="teal lighten-5"
+                            height="100%"
+                            tile
+                        >
+                            <v-card
+                                color="teal darken-3"
+                                dark
+                                style="border-radius: 5px 5px 0px 0px"
+                            >
+                                <v-card-title class="headline text-center" v-text=day></v-card-title>
+                            </v-card>
+                            <v-card
+                                color="teal lighten-4"
+                                style="border-radius: 0px 0px 0px 0px"
+                            >
+                                <v-card-text style="color: black">Almoço</v-card-text>
+                                <v-card-text style="color: black">Arroz<br/>Bife<br/>Alface<br/></v-card-text>
+                            </v-card>
+                            <v-card
+                                color="teal lighten-4"
+                                style="border-radius: 0px 0px 0px 0px"
+                            >
+                                <v-card-text style="color: black">Janta</v-card-text>
+                                <v-card-text style="color: black">Arroz<br/>Frango grelhado<br/>Cenoura<br/></v-card-text>
+                            </v-card>
+                                <!-- <div class="display-3">Slide {{ i + 1 }}</div> -->
+                        </v-sheet>
+                    </v-carousel-item>
+                </v-carousel>
             </v-col>
         </v-row>
     </v-container>
@@ -44,7 +67,14 @@
 export default {
     layout: 'menu',
     data: () => ({
-        test: "Última atualização: 20 de Março, às 22:00"
+        test: "Última atualização: 20 de Março, às 22:00",
+        days: [
+            'Segunda-feira',
+            'Terça-feira',
+            'Quarta-feira',
+            'Quinta-feira',
+            'Sexta-feira',
+        ]
     })
 }
 </script>
