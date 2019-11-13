@@ -99,6 +99,9 @@
         </div>
       </v-expand-transition>
     </v-card>
+    <v-btn fab dark large class="mb-12" color="primary" fixed right bottom>
+      <v-icon dark>mdi-plus</v-icon>
+    </v-btn>
   </v-container>
 </template>
 
@@ -108,7 +111,9 @@ export default {
   data: () => ({
     show1: false,
     show2: false,
-    show3: false
+    show3: false,
+    drawer: false,
+    settings: []
   })
 }
 </script>
