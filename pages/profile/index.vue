@@ -1,8 +1,8 @@
 <template>
   <v-container fluid>
-    <v-row justify="end" class="mb-n12">
+    <v-row class="mb-n12">
       <v-app-bar-nav-icon
-        class="mr-2"
+        class="ml-2"
         @click.stop="drawer = !drawer"
       ></v-app-bar-nav-icon>
       <v-navigation-drawer v-model="drawer" absolute temporary>
