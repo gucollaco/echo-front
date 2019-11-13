@@ -1,4 +1,5 @@
 <template>
+<<<<<<< HEAD
     <v-container fluid>
         <v-row justify="end mb-n12">
             <v-app-bar-nav-icon class="mr-2" @click.stop="drawer = !drawer"></v-app-bar-nav-icon>
@@ -144,10 +145,16 @@
             </v-col>
         </v-row>
     </v-container>
+=======
+  <v-container fluid>
+    PROFILE
+  </v-container>
+>>>>>>> 989ce8724bbbff3efcc98c3231368b139afd141b
 </template>
 
 <script>
 export default {
+<<<<<<< HEAD
     layout: 'menu',
     data: function() {
         return {
@@ -156,9 +163,10 @@ export default {
             settings: []
         }
     }
+=======
+  layout: "menu"
+>>>>>>> 989ce8724bbbff3efcc98c3231368b139afd141b
 }
 </script>
 
-<style>
-
-</style>
+<style></style>
