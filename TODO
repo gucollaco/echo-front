@@ -3,6 +3,12 @@ Structure:
   ✔ Adicionar eslinter e prettier @done(19-11-13 13:48)
   ✔ Adicionar i18n @done(19-11-13 13:48)
 Login:
-  ☐ Estilizar
+  ✔ Estilizar @done(19-11-13 15:51)
+Nav Bar:
+  ✔ Estilizar @done(19-11-13 15:52)
+Profile:
+  Settings:
+    ☐ Highlight nome do usuário
+    
 Settings:
   ☐ Pensar em coisas para adicionar em settings
