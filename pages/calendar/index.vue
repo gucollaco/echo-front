@@ -11,42 +11,109 @@
         ></v-date-picker>
       </v-col>
     </v-row>
+
     <v-card
-      v-for="(aula, index) in classes(picker2)"
+      v-for="(aula, index) in appointments(picker2)"
       :key="index"
-      class="mt-2"
-      color="primary"
-      dark
+      class="mt-5"
+      color="white"
+      @click="selected = selected !== aula._id ? aula._id : false"
     >
-      <v-card-title>
-        {{ aula.name }}
+      <v-sheet
+        :color="
+          `${aula._color || 'primary'} ${
+            selected !== aula._id ? 'lighten-5' : ''
+          }`
+        "
+        class="overline"
+        :class="{ 'white--text': selected === aula._id }"
+        style="width: 100%; text-align: center; padding: 5px 0; margin-bottom: -10px;"
+      >
+        {{ aula._object }}
+      </v-sheet>
+      <v-card-title style="display: flex; justify-content: space-between;">
+        <strong>{{ aula.name }}</strong>
+        <label class="body-2">{{ parseTime(aula.date[0]) }}</label>
       </v-card-title>
       <v-card-subtitle>
-        {{ aula.room }}<br />
-        {{ parseDate(aula.date[0]) }}
+        <div v-if="'class' in aula">
+          <strong>{{ aula.class }}</strong>
+        </div>
+        <div v-if="'room' in aula">
+          Sala <strong>{{ aula.room }}</strong>
+        </div>
       </v-card-subtitle>
-      <v-card-actions class="mt-n6">
-        <v-spacer></v-spacer>
-        <v-icon>mdi-{{ aula.icon }}</v-icon>
-      </v-card-actions>
+      <!-- <v-card-actions
+        v-if="selected === aula._id"
+        style="display: flex; flex-direction: row; justify-content: center;"
+      >
+        <v-btn icon>
+          <v-icon large>
+            mdi-delete
+          </v-icon>
+        </v-btn>
+      </v-card-actions> -->
     </v-card>
+
+    <!-- <v-btn
+      color="primary darken-3"
+      dark
+      absolute
+      bottom
+      right
+      fab
+      style="bottom: calc(56px + 28px) !important"
+    >
+      <v-icon>mdi-plus</v-icon>
+    </v-btn> -->
   </v-container>
 </template>
 
 <script>
 import { mapState, mapGetters } from "vuex"
-import { parseDate } from "@/utils/class"
+import { parseDate, parseTime } from "@/utils/class"
 
 export default {
   layout: "menu",
   data: () => ({
-    picker2: new Date().toISOString().substr(0, 10)
+    picker2: new Date().toISOString().substr(0, 10),
+    selected: false
   }),
   computed: {
-    ...mapGetters("user", ["classes"])
+    ...mapGetters("user", ["appointments"]),
+
+    normalized_appointments() {
+      return this.appointments(this.picker2).map(a => {
+        const obj = {
+          name: a.name,
+          date: a.date,
+          properties: []
+        }
+
+        for (const prop in [
+          {
+            name: "class",
+            label: ""
+          },
+          {
+            name: "room",
+            label: "Sala"
+          }
+        ]) {
+          if (prop.name in a) {
+            obj.properties.append({
+              label: prop.label,
+              value: a[prop.name]
+            })
+          }
+        }
+
+        return obj
+      })
+    }
   },
   methods: {
-    parseDate
+    parseTime
   }
 }
 </script>

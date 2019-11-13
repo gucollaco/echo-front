@@ -33,7 +33,7 @@
               block
               tile
               color="primary"
-              to="/home"
+              to="/calendar"
               nuxt
               @click="validate"
             >

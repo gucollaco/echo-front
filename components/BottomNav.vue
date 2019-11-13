@@ -23,12 +23,12 @@
         <v-icon>mdi-calendar-blank</v-icon>
       </v-btn>
 
-      <v-btn to="/home" value="home" nuxt>
+      <!-- <v-btn to="/home" value="home" nuxt>
         <div class="label">
           <span> {{ $t("pages.home") }} </span>
         </div>
         <v-icon>mdi-home</v-icon>
-      </v-btn>
+      </v-btn> -->
 
       <v-btn to="/classes" value="classes" nuxt>
         <div class="label">
