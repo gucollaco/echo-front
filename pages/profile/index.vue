@@ -76,9 +76,9 @@
       </v-avatar>
     </v-row>
     <v-row class="mt-12">
-      <v-col cols="6"> <file :label="$t('profile.certificate')"/></v-col>
+      <v-col cols="6"> <file :value="certificate"/></v-col>
       <v-col cols="6">
-        <file :label="$t('profile.history')" />
+        <file :value="history" />
       </v-col>
     </v-row>
     <v-row class="mt-8" align="center">
@@ -105,6 +105,8 @@
 <script>
 import { mapState, mapGetters, mapMutations, mapActions } from "vuex"
 import fileVue from "../../components/profile/file.vue"
+import { randomDate } from "@/utils/mock"
+import { formatDate } from "@/utils/format"
 
 export default {
   components: {
@@ -115,12 +117,26 @@ export default {
     return {
       lastUpdate: "Última atualização: 20 de Março, às 22:00",
       drawer: false,
-      settings: []
+      settings: [],
+
+      certificate: {
+        label: this.$t("profile.certificate"),
+        date: this.randomDate(),
+        interval: 30
+      },
+      history: {
+        label: this.$t("profile.history"),
+        date: this.randomDate(),
+        interval: 30 * 6
+      }
     }
   },
   computed: {
     ...mapState("user", ["name"]),
     ...mapGetters("user", ["course"])
+  },
+  methods: {
+    randomDate
   }
 }
 </script>
