@@ -45,7 +45,7 @@
             </v-list-item>
           </v-list-item-group>
           <v-list-item-group color="primary">
-            <v-list-item>
+            <v-list-item to="/" nuxt>
               <v-list-item-icon>
                 <v-icon>mdi-logout</v-icon>
               </v-list-item-icon>
