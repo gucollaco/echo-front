@@ -18,15 +18,56 @@
       <v-col cols="12">
         <v-carousel hide-delimiters :show-arrows="false">
           <v-carousel-item v-for="day in days" :key="day">
-            <v-sheet color="primary lighten-5" height="100%" tile>
-              <v-card
-                color="primary darken-3"
-                dark
-                style="border-radius: 5px 5px 0px 0px"
+            <v-card
+              color="primary darken-3"
+              dark
+              style="border-radius: 5px 5px 0px 0px"
+            >
+              <v-card-title v-text="day"></v-card-title>
+            </v-card>
+            <v-card
+              light
+              color="primary darken-3"
+              style="border-radius: 0px 0px 5px 5px"
+            >
+              <v-list
+                subheader
+                style="border-radius: 0px 0px 0px 0px"
+                color="primary lighten-4"
               >
-                <v-card-title v-text="day"></v-card-title>
-              </v-card>
-              <v-card
+                <v-subheader>Almoço</v-subheader>
+
+                <v-list-item>
+                  <v-list-item-content>
+                    <v-list-item-subtitle>Arroz e feijão</v-list-item-subtitle>
+                    <v-list-item-subtitle>Batata frita</v-list-item-subtitle>
+                    <v-list-item-subtitle>Bife</v-list-item-subtitle>
+                    <v-list-item-subtitle>Alface</v-list-item-subtitle>
+                  </v-list-item-content>
+                </v-list-item>
+              </v-list>
+
+              <v-divider></v-divider>
+
+              <v-list
+                subheader
+                style="border-radius: 0px 0px 5px 5px"
+                color="primary lighten-4"
+              >
+                <v-subheader>Janta</v-subheader>
+
+                <v-list-item>
+                  <v-list-item-content>
+                    <v-list-item-subtitle>Arroz e feijão</v-list-item-subtitle>
+                    <v-list-item-subtitle>Batata cozida</v-list-item-subtitle>
+                    <v-list-item-subtitle
+                      >Strogonoff de frango</v-list-item-subtitle
+                    >
+                  </v-list-item-content>
+                </v-list-item>
+              </v-list>
+            </v-card>
+            <!-- <v-card
                 color="primary lighten-4"
                 style="border-radius: 0px 0px 0px 0px"
               >
@@ -43,9 +84,7 @@
                 <v-card-text style="color: black"
                   >Arroz<br />Frango grelhado<br />Cenoura<br
                 /></v-card-text>
-              </v-card>
-              <!-- <div class="display-3">Slide {{ i + 1 }}</div> -->
-            </v-sheet>
+              </v-card> -->
           </v-carousel-item>
         </v-carousel>
       </v-col>
