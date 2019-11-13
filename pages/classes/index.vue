@@ -4,13 +4,15 @@
       <v-card-title>
         Interação Humano-Computador
       </v-card-title>
-
+      <v-card-subtitle>
+        Sala 404<br />
+        Qua 19:00 - 23:00
+      </v-card-subtitle>
       <v-card-actions>
         <v-chip class="mx-1" color="light-green darken-3">
           Apresentação
         </v-chip>
         <v-spacer></v-spacer>
-
         <v-btn icon @click="show1 = !show1">
           <v-icon>{{ show1 ? "mdi-chevron-up" : "mdi-chevron-down" }}</v-icon>
         </v-btn>
@@ -22,7 +24,6 @@
 
           <v-card-text>
             <ul>
-              <li>Sala 404</li>
               <li>Professor Tiago Silva</li>
               <li>13/11/2019 - Apresentação Hi-Fi</li>
             </ul>
@@ -34,6 +35,11 @@
       <v-card-title>
         Cálculo Numérico
       </v-card-title>
+      <v-card-subtitle>
+        Sala 205<br />
+        Qui 10:00 - 12:00<br />
+        Sex 10:00 - 12:00<br />
+      </v-card-subtitle>
       <v-card-actions>
         <v-chip class="mx-1" color="light-green darken-2">
           Prova
@@ -53,7 +59,6 @@
 
           <v-card-text>
             <ul>
-              <li>Sala 205</li>
               <li>Professor Erwin</li>
               <li>14/11/2019 - Prova</li>
               <li>14/11/2019 - Apresentação</li>
@@ -66,6 +71,11 @@
       <v-card-title>
         Compiladores
       </v-card-title>
+      <v-card-subtitle>
+        Sala 404<br />
+        Ter 15:30 - 17:30<br />
+        Qui 15:30 - 17:30<br />
+      </v-card-subtitle>
       <v-card-actions>
         <v-chip class="mx-1" color="light-green darken-2">
           Prova
@@ -82,7 +92,6 @@
 
           <v-card-text>
             <ul>
-              <li>Sala 303</li>
               <li>Professor Galvão</li>
               <li>14/11/2019 - Prova</li>
             </ul>
