@@ -80,7 +80,7 @@
             </v-btn>
           </v-card-text>
           <v-card-actions>
-            <v-btn text color="light-blue lighten-4">
+            <v-btn text color="primary lighten-4">
               Baixar
             </v-btn>
           </v-card-actions>
@@ -99,7 +99,7 @@
             </v-btn>
           </v-card-text>
           <v-card-actions>
-            <v-btn text color="light-blue lighten-4">
+            <v-btn text color="primary lighten-4">
               Baixar
             </v-btn>
           </v-card-actions>

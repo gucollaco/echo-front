@@ -2,15 +2,11 @@
   <v-container fluid>
     <v-row no-gutters>
       <v-col cols="12">
-        <v-card
-          color="primary darken-3"
-          dark
-          style="border-radius: 5px 5px 5px 5px"
-        >
+        <v-card color="primary darken-3" dark>
           <v-card-title>2 créditos</v-card-title>
           <v-card-subtitle v-text="lastUpdate"></v-card-subtitle>
           <v-card-actions>
-            <v-btn text color="light-blue lighten-4">
+            <v-btn text color="primary lighten-4">
               Atualizar
             </v-btn>
           </v-card-actions>
@@ -20,11 +16,7 @@
 
     <v-row class="mt-3" no-gutters>
       <v-col cols="12">
-        <v-carousel
-          hide-delimiters
-          :show-arrows="false"
-          style="border-radius: 5px 5px 5px 5px"
-        >
+        <v-carousel hide-delimiters :show-arrows="false">
           <v-carousel-item v-for="day in days" :key="day">
             <v-sheet color="primary lighten-5" height="100%" tile>
               <v-card
