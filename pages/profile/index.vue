@@ -66,7 +66,7 @@
         </v-list>
       </v-navigation-drawer>
     </v-row>
-    <v-row justify="center" class="mt-12">
+    <v-row justify="center" class="mt-4">
       <v-avatar color="primary" size="196">
         <span>
           <v-btn icon>
@@ -75,13 +75,13 @@
         </span>
       </v-avatar>
     </v-row>
-    <v-row class="mt-12">
+    <v-row class="mt-4">
       <v-col cols="6"> <file :value="certificate"/></v-col>
       <v-col cols="6">
         <file :value="history" />
       </v-col>
     </v-row>
-    <v-row class="mt-8" align="center">
+    <v-row class="mt-2" align="center">
       <v-col cols="6">
         <div class="text-center">
           <v-progress-circular
