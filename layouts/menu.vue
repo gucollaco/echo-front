@@ -1,18 +1,16 @@
 <template>
-    <v-app>
-        <nuxt />
-        <BottomNav />
-    </v-app>
+  <v-app>
+    <nuxt />
+    <BottomNav />
+  </v-app>
 </template>
 
 <script>
-import BottomNav from '../components/BottomNav'
+import BottomNav from "../components/BottomNav"
 
 export default {
-    components: { BottomNav }
+  components: { BottomNav }
 }
 </script>
 
-<style>
-
-</style>
+<style></style>

@@ -1,15 +1,13 @@
 <template>
-    <v-container fluid>
-        PROFILE
-    </v-container>
+  <v-container fluid>
+    PROFILE
+  </v-container>
 </template>
 
 <script>
 export default {
-	layout: 'menu'
+  layout: "menu"
 }
 </script>
 
-<style>
-
-</style>
+<style></style>

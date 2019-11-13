@@ -14,15 +14,15 @@
 
 export default {
   login: {
-    email: 'Email',
-    password: 'Senha',
-    signin: 'Entrar'
+    email: "Email",
+    password: "Senha",
+    signin: "Entrar"
   },
   pages: {
-    food: 'Alimentação',
-    calendar: 'Agenda',
-    home: 'Página Inicial',
-    classes: 'Aulas',
-    profile: 'Perfil'
-  },
+    food: "Alimentação",
+    calendar: "Agenda",
+    home: "Página Inicial",
+    classes: "Aulas",
+    profile: "Perfil"
+  }
 }

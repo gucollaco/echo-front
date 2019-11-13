@@ -13,21 +13,21 @@
 // }
 
 export default {
-  welcome: 'Bem Vindo',
+  welcome: "Bem Vindo",
   login: {
-    email: 'Email',
-    password: 'Senha',
-    signin: 'Entrar',
+    email: "Email",
+    password: "Senha",
+    signin: "Entrar",
     rules: {
-      email: 'Insira seu email Unifesp',
-      password: 'Insira a senha de seu email Unifesp'
+      email: "Insira seu email Unifesp",
+      password: "Insira a senha de seu email Unifesp"
     }
   },
   pages: {
-    food: 'Alimentação',
-    calendar: 'Agenda',
-    home: 'Página Inicial',
-    classes: 'Aulas',
-    profile: 'Perfil'
-  },
+    food: "Alimentação",
+    calendar: "Agenda",
+    home: "Página Inicial",
+    classes: "Aulas",
+    profile: "Perfil"
+  }
 }
