@@ -1,4 +1,8 @@
 Structure:
   ✔ Mudar cores para variables @done(19-11-13 11:58)
+  ✔ Adicionar eslinter e prettier @done(19-11-13 13:48)
+  ✔ Adicionar i18n @done(19-11-13 13:48)
 Login:
   ☐ Estilizar
+Settings:
+  ☐ Pensar em coisas para adicionar em settings

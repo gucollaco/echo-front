@@ -24,7 +24,7 @@ export default {
     }
   },
   pages: {
-    food: "Alimentação",
+    food: "Rango",
     calendar: "Agenda",
     home: "Página Inicial",
     classes: "Aulas",
