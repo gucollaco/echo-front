@@ -27,6 +27,9 @@ module.exports = {
     browser: true,
     node: true
   },
+  globals: {
+    $moment: true
+  },
   parserOptions: {
     parser: 'babel-eslint'
   },

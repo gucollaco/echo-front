@@ -41,6 +41,7 @@ export default {
    */
   buildModules: [
     "@nuxtjs/eslint-module",
+    "@nuxtjs/moment",
     // Simple usage
     "@nuxtjs/vuetify",
 
@@ -89,8 +90,12 @@ export default {
       }
     ]
   ],
+  moment: {
+    defaultLocale: "pt-BR",
+    locales: ["pt-BR"]
+  },
   /*
-   ** vuetify module configuration
+   ** vuetify module configurations
    ** https://github.com/nuxt-community/vuetify-module
    */
   vuetify: {

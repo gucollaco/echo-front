@@ -74,7 +74,7 @@ export default {
     margin-left: 0px
     opacity: 0
   100%
-    margin-left: -100px
+    margin-left: -110px
 
 .bottom-nav
   .v-bottom-navigation::v-deep
@@ -100,7 +100,7 @@ export default {
           color: #009688
 
           span
-            margin-left: -100vw
+            margin-left: -110vw
 
             animation: show 2s linear 1
 </style>

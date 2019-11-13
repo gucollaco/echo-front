@@ -1,6 +1,8 @@
 <template>
   <v-app>
-    <nuxt />
+    <div class="content">
+      <nuxt />
+    </div>
     <BottomNav />
   </v-app>
 </template>
@@ -15,4 +17,8 @@ export default {
 
 <style lang="sass">
 @import '~vuetify/src/styles/styles.sass'
+
+.content
+  overflow-y: auto
+  height: calc(100vh - 56px)
 </style>
