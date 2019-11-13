@@ -3,7 +3,7 @@
         <v-row no-gutters>
             <v-col cols="12">
                 <v-card
-                    color="teal darken-3"
+                    color="primary darken-3"
                     dark
                     style="border-radius: 5px 5px 5px 5px"
                 >
