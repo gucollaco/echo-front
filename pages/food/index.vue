@@ -7,8 +7,8 @@
                     dark
                     style="border-radius: 5px 5px 5px 5px"
                 >
-                    <v-card-title class="headline">2 créditos</v-card-title>
-                    <v-card-subtitle v-text="test"></v-card-subtitle>
+                    <v-card-title>2 créditos</v-card-title>
+                    <v-card-subtitle v-text="lastUpdate"></v-card-subtitle>
                     <v-card-actions>
                         <v-btn
                             text
@@ -38,7 +38,7 @@
                                 dark
                                 style="border-radius: 5px 5px 0px 0px"
                             >
-                                <v-card-title class="headline text-center" v-text=day></v-card-title>
+                                <v-card-title v-text=day></v-card-title>
                             </v-card>
                             <v-card
                                 color="teal lighten-4"
@@ -67,13 +67,13 @@
 export default {
     layout: 'menu',
     data: () => ({
-        test: "Última atualização: 20 de Março, às 22:00",
+        lastUpdate: "Última atualização: 20 de Março, às 22:00",
         days: [
-            'Segunda-feira',
-            'Terça-feira',
-            'Quarta-feira',
-            'Quinta-feira',
-            'Sexta-feira',
+            'Segunda-feira (11/11/2019)',
+            'Terça-feira (12/11/2019)',
+            'Quarta-feira (13/11/2019)',
+            'Quinta-feira (14/11/2019)',
+            'Sexta-feira (15/11/2019)',
         ]
     })
 }
