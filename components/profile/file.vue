@@ -17,7 +17,7 @@
       class="white--text"
       cover
       aspect-ratio="2"
-      height="180px"
+      height="160px"
       :src="`/img/${random_image(2)}`"
       gradient="to top, rgba(100,115,201,.17), rgba(26, 29, 46, 0.9)"
     >
