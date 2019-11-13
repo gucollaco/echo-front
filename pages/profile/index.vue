@@ -5,13 +5,16 @@
         class="mr-2"
         @click.stop="drawer = !drawer"
       ></v-app-bar-nav-icon>
-      <v-navigation-drawer v-model="drawer" absolute bottom temporary>
+      <v-navigation-drawer v-model="drawer" absolute temporary>
         <v-list subheader class="mt-2">
-          <v-subheader>Olá João Carlos Martins!</v-subheader>
+          <v-subheader
+            >{{ $t("profile.hello") }} <strong class="px-2">{{ name }}</strong
+            >!</v-subheader
+          >
         </v-list>
         <v-divider></v-divider>
         <v-list subheader two-line flat>
-          <v-subheader>Configuração</v-subheader>
+          <v-subheader>{{ $t("profile.settings.name") }}</v-subheader>
 
           <v-list-item-group v-model="settings" multiple>
             <v-list-item>
@@ -22,10 +25,12 @@
                 </v-list-item-action>
 
                 <v-list-item-content>
-                  <v-list-item-title>Notificações</v-list-item-title>
-                  <v-list-item-subtitle
-                    >Permitir notificações</v-list-item-subtitle
-                  >
+                  <v-list-item-title class="capitalize">{{
+                    $tc("general.notification", 1)
+                  }}</v-list-item-title>
+                  <v-list-item-subtitle>{{
+                    $t("profile.settings.allow_notifications")
+                  }}</v-list-item-subtitle>
                 </v-list-item-content>
               </template>
             </v-list-item>
@@ -33,14 +38,16 @@
         </v-list>
         <v-divider></v-divider>
         <v-list>
-          <v-subheader>Outros</v-subheader>
+          <v-subheader>{{ $tc("general.other", 1) }}</v-subheader>
           <v-list-item-group color="primary">
             <v-list-item>
               <v-list-item-icon>
                 <v-icon>mdi-help</v-icon>
               </v-list-item-icon>
               <v-list-item-content>
-                <v-list-item-title>Quem somos?</v-list-item-title>
+                <v-list-item-title>{{
+                  $t("profile.settings.about")
+                }}</v-list-item-title>
               </v-list-item-content>
             </v-list-item>
           </v-list-item-group>
@@ -50,7 +57,9 @@
                 <v-icon>mdi-logout</v-icon>
               </v-list-item-icon>
               <v-list-item-content>
-                <v-list-item-title>Sair</v-list-item-title>
+                <v-list-item-title>{{
+                  $t("profile.settings.signout")
+                }}</v-list-item-title>
               </v-list-item-content>
             </v-list-item>
           </v-list-item-group>
@@ -67,43 +76,9 @@
       </v-avatar>
     </v-row>
     <v-row class="mt-12">
+      <v-col cols="6"> <file :label="$t('profile.certificate')"/></v-col>
       <v-col cols="6">
-        <v-card
-          color="primary darken-3"
-          dark
-          style="border-radius: 5px 5px 5px 5px"
-        >
-          <v-card-title>Atestado</v-card-title>
-          <v-card-text class="text-center">
-            <v-btn icon>
-              <v-icon size="36">mdi-file-document</v-icon>
-            </v-btn>
-          </v-card-text>
-          <v-card-actions>
-            <v-btn text color="primary lighten-4">
-              Baixar
-            </v-btn>
-          </v-card-actions>
-        </v-card>
-      </v-col>
-      <v-col cols="6">
-        <v-card
-          color="primary darken-3"
-          dark
-          style="border-radius: 5px 5px 5px 5px"
-        >
-          <v-card-title>Histórico</v-card-title>
-          <v-card-text class="text-center">
-            <v-btn icon>
-              <v-icon size="36">mdi-file-document</v-icon>
-            </v-btn>
-          </v-card-text>
-          <v-card-actions>
-            <v-btn text color="primary lighten-4">
-              Baixar
-            </v-btn>
-          </v-card-actions>
-        </v-card>
+        <file :label="$t('profile.history')" />
       </v-col>
     </v-row>
     <v-row class="mt-8" align="center">
@@ -113,22 +88,28 @@
             :rotate="360"
             :size="100"
             :width="15"
-            :value="70"
+            :value="course().progress * 100"
             color="teal"
           >
-            70%
+            {{ course().progress * 100 }}%
           </v-progress-circular>
         </div>
       </v-col>
       <v-col cols="6">
-        Ciência da Computação
+        {{ $t("unifesp.courses." + course()._id) }}
       </v-col>
     </v-row>
   </v-container>
 </template>
 
 <script>
+import { mapState, mapGetters, mapMutations, mapActions } from "vuex"
+import fileVue from "../../components/profile/file.vue"
+
 export default {
+  components: {
+    file: fileVue
+  },
   layout: "menu",
   data() {
     return {
@@ -136,6 +117,10 @@ export default {
       drawer: false,
       settings: []
     }
+  },
+  computed: {
+    ...mapState("user", ["name"]),
+    ...mapGetters("user", ["course"])
   }
 }
 </script>

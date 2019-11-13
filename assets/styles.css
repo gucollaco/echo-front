@@ -9,3 +9,7 @@ h1, h2 {
 .v-application .mb-24 {
     margin-bottom: 96px !important;
 }
+
+.capitalize {
+    text-transform: capitalize;
+}

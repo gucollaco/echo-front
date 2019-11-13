@@ -4,11 +4,20 @@ Structure:
   ✔ Adicionar i18n @done(19-11-13 13:48)
 Login:
   ✔ Estilizar @done(19-11-13 15:51)
+  ✔ i18n @done(19-11-13 16:34)
 Nav Bar:
   ✔ Estilizar @done(19-11-13 15:52)
+  ✔ i18n @done(19-11-13 16:34)
 Profile:
+  ☐ Atestado/Historico @started(19-11-13 16:02)
+    ✔ i18n @done(19-11-13 16:34)
+    ✔ Dados da store @done(19-11-13 16:52)
+    ✔ Transformar em componente @done(19-11-13 16:52)
+    ☐ Colocar imagem no fundo
+    ☐ Colocar pospend com a ultima data de atualizacao
   Settings:
     ☐ Highlight nome do usuário
-    
-Settings:
-  ☐ Pensar em coisas para adicionar em settings
+    ☐ Checkbox de notificacao nao ta funcionando
+    ☐ Pensar em coisas para adicionar em settings
+WALKTHROUGH:
+  ☐ Implementar o walkthrough
