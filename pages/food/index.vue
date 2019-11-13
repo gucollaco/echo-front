@@ -29,26 +29,26 @@
                         :key="day"
                     >
                         <v-sheet
-                            color="teal lighten-5"
+                            color="primary lighten-5"
                             height="100%"
                             tile
                         >
                             <v-card
-                                color="teal darken-3"
+                                color="primary darken-3"
                                 dark
                                 style="border-radius: 5px 5px 0px 0px"
                             >
                                 <v-card-title class="headline text-center" v-text=day></v-card-title>
                             </v-card>
                             <v-card
-                                color="teal lighten-4"
+                                color="primary lighten-4"
                                 style="border-radius: 0px 0px 0px 0px"
                             >
                                 <v-card-text style="color: black">Almoço</v-card-text>
                                 <v-card-text style="color: black">Arroz<br/>Bife<br/>Alface<br/></v-card-text>
                             </v-card>
                             <v-card
-                                color="teal lighten-4"
+                                color="primary lighten-4"
                                 style="border-radius: 0px 0px 0px 0px"
                             >
                                 <v-card-text style="color: black">Janta</v-card-text>

@@ -13,16 +13,16 @@
 				>
 					<v-col lg="4" md="6" sm="12">
 						<v-text-field
-							v-model="username"
-							:rules="usernameRules"
-							label="Login"
+							v-model="email"
+							:rules="emailRules"
+							:label="$t('login.email')"
 							required
 						></v-text-field>
 						<v-text-field
 							v-model="password"
 							:rules="passwordRules"
 							type="password"
-							label="Senha"
+							:label="$t('login.password')"
 							required
 						></v-text-field>
 					</v-col>
@@ -38,7 +38,7 @@
 							@click="validate"
 							to="/home" nuxt
 						>
-							Entrar
+							{{ $t('login.signin') }}
 						</v-btn>
 					</v-col>
 				</v-row>
@@ -49,17 +49,19 @@
 
 <script>
 export default {
-	data: () => ({
-		valid: true,
-		username: '',
-		usernameRules: [
-			v => !!v || 'Insira seu usuário Unifesp'
-		],
-		password: '',
-		passwordRules: [
-			v => !!v || 'Insira sua senha Unifesp'
-		]
-	}),
+	data() {
+		return {
+			valid: true,
+			email: '',
+			emailRules: [
+				v => !!v || this.$t('login.rules.email')
+			],
+			password: '',
+			passwordRules: [
+				v => !!v || this.$t('login.rules.password')
+			]
+		}
+	},
 
 	methods: {
 		validate () {

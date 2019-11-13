@@ -48,6 +48,34 @@ export default {
   */
   modules: [
     '@nuxtjs/pwa',
+    ['nuxt-i18n', {
+      locales: [
+        {
+          code: 'pt-BR',
+          iso: 'pt-BR',
+          file: 'pt-BR.js'
+        },
+        {
+          code: 'en',
+          iso: 'en-US',
+          file: 'en-US.js'
+        },
+      ],
+      lazy: true,
+      langDir: 'lang/',
+      defaultLocale: 'pt-BR',
+      vueI18n: {
+        fallbackLocale: 'pt-BR',
+        messages: {
+          en: {
+            welcome: 'Welcome'
+          },
+          pt: {
+            welcome: 'Bem Vindo'
+          }
+        }
+      }
+    }]
   ],
   /*
    ** vuetify module configuration
@@ -55,7 +83,6 @@ export default {
    */
   vuetify: {
     customVariables: ['~/assets/variables.scss'],
-    treeShake: true,
     theme: {
       light: true,
       themes: {

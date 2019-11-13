@@ -5,8 +5,8 @@
             grow
             fixed
             dark
-            background-color="teal darken-4"
-            color="teal lighten-5"
+            background-color="primary darken-4"
+            color="primary lighten-5"
         >
             <v-btn to="/food" nuxt>
                 <span>Food</span>
