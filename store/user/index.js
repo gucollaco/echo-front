@@ -5,6 +5,30 @@ export const state = () => ({
       _id: "bcc",
       progress: 0.7
     }
+  ],
+  classes: [
+    {
+      name: "IHC",
+      icon: "book-variant",
+      room: "404",
+      date: [
+        {
+          day: "2019-11-13",
+          time: ["19:00", "23:00"]
+        }
+      ]
+    },
+    {
+      name: "Compiladores",
+      icon: "book-variant",
+      room: "303",
+      date: [
+        {
+          day: "2019-11-14",
+          time: ["15:30", "17:30"]
+        }
+      ]
+    }
   ]
 })
 
@@ -30,5 +54,14 @@ export const getters = {
 
       return undefined
     }
+  },
+  classes(state) {
+    return date =>
+      state.classes.filter(c => c.date.filter(d => d.day === date).length > 0)
   }
+}
+
+export const mutations = {
+  // SET_AULA(state, args...) {
+  // }
 }

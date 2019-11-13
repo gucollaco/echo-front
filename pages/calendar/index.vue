@@ -11,28 +11,43 @@
         ></v-date-picker>
       </v-col>
     </v-row>
-    <v-card color="primary" dark>
+    <v-card
+      v-for="(aula, index) in classes(picker2)"
+      :key="index"
+      class="mt-2"
+      color="primary"
+      dark
+    >
       <v-card-title>
-        Interação Humano-Computador
+        {{ aula.name }}
       </v-card-title>
       <v-card-subtitle>
-        Sala 404<br />
-        Qua 19:00 - 23:00
+        {{ aula.room }}<br />
+        {{ parseDate(aula.date[0]) }}
       </v-card-subtitle>
       <v-card-actions class="mt-n6">
         <v-spacer></v-spacer>
-        <v-icon>mdi-book-variant</v-icon>
+        <v-icon>mdi-{{ aula.icon }}</v-icon>
       </v-card-actions>
     </v-card>
   </v-container>
 </template>
 
 <script>
+import { mapState, mapGetters } from "vuex"
+import { parseDate } from "@/utils/class"
+
 export default {
   layout: "menu",
   data: () => ({
     picker2: new Date().toISOString().substr(0, 10)
-  })
+  }),
+  computed: {
+    ...mapGetters("user", ["classes"])
+  },
+  methods: {
+    parseDate
+  }
 }
 </script>
 

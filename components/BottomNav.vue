@@ -1,8 +1,7 @@
 <template>
   <div class="bottom-nav">
     <v-bottom-navigation
-      :active.sync="bottomNav"
-      :value="true"
+      v-model="bottomNav"
       grow
       fixed
       dark
