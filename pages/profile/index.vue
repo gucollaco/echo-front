@@ -1,11 +1,11 @@
 <template>
   <v-container fluid>
-    <v-row justify="end" class="mb-n12">
+    <v-row class="mb-n12">
       <v-app-bar-nav-icon
-        class="mr-2"
+        class="ml-2"
         @click.stop="drawer = !drawer"
       ></v-app-bar-nav-icon>
-      <v-navigation-drawer v-model="drawer" absolute bottom temporary>
+      <v-navigation-drawer v-model="drawer" absolute temporary>
         <v-list subheader class="mt-2">
           <v-subheader>Olá João Carlos Martins!</v-subheader>
         </v-list>
