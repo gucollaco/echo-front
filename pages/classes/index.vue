@@ -99,9 +99,9 @@
         </div>
       </v-expand-transition>
     </v-card>
-    <v-btn fab dark large class="mb-12" color="primary" fixed right bottom>
+    <!-- <v-btn fab dark large class="mb-12" color="primary" fixed right bottom>
       <v-icon dark>mdi-plus</v-icon>
-    </v-btn>
+    </v-btn> -->
   </v-container>
 </template>
 
