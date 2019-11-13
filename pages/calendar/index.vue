@@ -11,7 +11,7 @@
         ></v-date-picker>
       </v-col>
     </v-row>
-    <v-card color="primary darken-1" dark>
+    <v-card color="primary" dark>
       <v-card-title>
         Interação Humano-Computador
       </v-card-title>
