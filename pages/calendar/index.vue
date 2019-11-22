@@ -17,18 +17,15 @@
       :key="index"
       class="mt-5"
       color="white"
-      @click="selected = selected !== aula._id ? aula._id : false"
     >
       <v-sheet
-        :color="
-          `${aula._color || 'primary'} ${
-            selected !== aula._id ? 'lighten-5' : ''
-          }`
-        "
+        color="grey lighten-4"
         class="overline"
-        :class="{ 'white--text': selected === aula._id }"
-        style="width: 100%; text-align: center; padding: 5px 0; margin-bottom: -10px;"
+        style="width: 100%; padding: 5px 0; padding-left: 15px; margin-bottom: -10px; font-weight: 500;"
       >
+        <v-icon :color="`${aula._color || 'primary'}`"
+          >mdi-circle-medium</v-icon
+        >
         {{ aula._object }}
       </v-sheet>
       <v-card-title style="display: flex; justify-content: space-between;">
@@ -43,16 +40,6 @@
           Sala <strong>{{ aula.room }}</strong>
         </div>
       </v-card-subtitle>
-      <!-- <v-card-actions
-        v-if="selected === aula._id"
-        style="display: flex; flex-direction: row; justify-content: center;"
-      >
-        <v-btn icon>
-          <v-icon large>
-            mdi-delete
-          </v-icon>
-        </v-btn>
-      </v-card-actions> -->
     </v-card>
 
     <!-- <v-btn
@@ -118,4 +105,10 @@ export default {
 }
 </script>
 
-<style></style>
+<style lang="sass" scoped>
+// .outer-card
+//   box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 1px 5px 0px rgba(0, 0, 0, 0.12)
+
+//   .v-card::v-deep
+//     border: none
+</style>

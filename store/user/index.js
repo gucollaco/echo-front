@@ -109,7 +109,8 @@ export const state = () => ({
       ],
       _color: "blue"
     }
-  ]
+  ],
+  events2: []
 })
 
 export const getters = {

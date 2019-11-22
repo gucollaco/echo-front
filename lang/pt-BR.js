@@ -22,7 +22,7 @@ export default {
     download: "Baixar"
   },
   login: {
-    email: "Email",
+    email: "Email Unifesp",
     password: "Senha",
     signin: "Entrar",
     rules: {
@@ -42,9 +42,9 @@ export default {
     history: "Histórico"
   },
   pages: {
-    food: "Rango",
+    food: "Refeição",
     calendar: "Agenda",
-    home: "Página Inicial",
+    home: "Início",
     classes: "Aulas",
     profile: "Perfil"
   },

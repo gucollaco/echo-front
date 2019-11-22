@@ -5,9 +5,14 @@ Structure:
 Login:
   ✔ Estilizar @done(19-11-13 15:51)
   ✔ i18n @done(19-11-13 16:34)
+  ☐ Aplicar novo layout
+    ☐ So liberar o botao quando os fields estiverem preenchidos
+  ☐ Onboard explicando que tem q ser o email unifesp
+  ☐ Esqueci minha senha
 Nav Bar:
   ✔ Estilizar @done(19-11-13 15:52)
   ✔ i18n @done(19-11-13 16:34)
+  ☐ 
 Profile:
   ☐ Atestado/Historico @started(19-11-13 16:02)
     ✔ i18n @done(19-11-13 16:34)
