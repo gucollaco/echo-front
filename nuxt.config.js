@@ -85,8 +85,8 @@ export default {
     ]
   ],
   moment: {
-    defaultLocale: "pt-BR",
-    locales: ["pt-BR"]
+    defaultLocale: "pt-br",
+    locales: ["pt-br"]
   },
   webfontloader: {
     google: {
