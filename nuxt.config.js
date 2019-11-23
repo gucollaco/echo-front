@@ -16,13 +16,7 @@ export default {
         content: process.env.npm_package_description || ""
       }
     ],
-    link: [
-      { rel: "icon", type: "image/x-icon", href: "/favicon.ico" },
-      {
-        rel: "stylesheet",
-        href: "https://fonts.googleapis.com/css?family=Montserrat&display=swap"
-      }
-    ]
+    link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }]
   },
   /*
    ** Customize the progress-bar color
@@ -94,6 +88,15 @@ export default {
     defaultLocale: "pt-BR",
     locales: ["pt-BR"]
   },
+  webfontloader: {
+    google: {
+      families: [
+        "Open+Sans&display=swap",
+        "Lato&display=swap",
+        "Montserrat&display=swap"
+      ]
+    }
+  },
   /*
    ** vuetify module configurations
    ** https://github.com/nuxt-community/vuetify-module
@@ -102,11 +105,16 @@ export default {
     customVariables: ["~/assets/variables.scss"],
     theme: {
       light: true,
+      theme: {
+        options: {
+          customProperties: true
+        }
+      },
       themes: {
         light: {
           primary: colors.teal,
-          accent: colors.grey.darken3,
-          secondary: colors.amber.darken3,
+          accent: colors.yellow.base,
+          secondary: colors.amber.base,
           info: colors.teal.lighten1,
           warning: colors.amber.base,
           error: colors.deepOrange.accent4,

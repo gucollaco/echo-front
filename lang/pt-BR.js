@@ -1,3 +1,5 @@
+import ptBR from "./pt-BR"
+
 // // lang/[lang].js
 
 // export default (context) => {
@@ -20,6 +22,11 @@ export default {
     notification: "notificação | notificações",
     other: "outro | outros",
     download: "Baixar"
+  },
+  home: {
+    notifications: "Você tem novas notificações",
+    curated_by: "Oferecimento",
+    holiday: "Feriado"
   },
   login: {
     email: "Email Unifesp",

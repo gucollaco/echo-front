@@ -49,7 +49,7 @@
               tile
               class="font-weight-bold"
               color="primary darken-2"
-              to="/calendar"
+              to="/home"
               nuxt
               x-large
               @click="validate"

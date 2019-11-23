@@ -5,14 +5,43 @@ Structure:
 Login:
   ✔ Estilizar @done(19-11-13 15:51)
   ✔ i18n @done(19-11-13 16:34)
-  ☐ Aplicar novo layout
-    ☐ So liberar o botao quando os fields estiverem preenchidos
+  ✔ Aplicar novo layout @done(19-11-22 14:40)
+    ✔ So liberar o botao quando os fields estiverem preenchidos @done(19-11-22 14:40)
   ☐ Onboard explicando que tem q ser o email unifesp
   ☐ Esqueci minha senha
 Nav Bar:
   ✔ Estilizar @done(19-11-13 15:52)
   ✔ i18n @done(19-11-13 16:34)
-  ☐ 
+Home:
+  ☐ Onboarding
+  ☐ Aplicar layout
+    ✔ Background com circulos @done(19-11-22 18:18)
+    ☐ Parallax?
+  ☐ Header
+    ☐ Notificacoes
+      ☐ Notificacoes nao lidas
+  ☐ Slider de super eventos
+    ☐ Animacao
+    ☐ Slider de eventos
+      ☐ Animacao
+      ☐ Animacao para abrir /event
+  ☐ Explore
+    ☐ Eventos
+      ☐ Animacao para abrir /event
+Event:
+  ☐ Aplicar layout
+  ☐ Onboarding
+  ☐ Back variant
+    ☐ Back to super event
+    ☐ Back to explore
+    ☐ Back to agenda
+  ☐ Follow
+  ☐ Reminders
+  ☐ Checkin
+  ☐ Ver mais -> place
+  ☐ Informar ERRO
+Place:
+  ☐ Design
 Profile:
   ☐ Atestado/Historico @started(19-11-13 16:02)
     ✔ i18n @done(19-11-13 16:34)

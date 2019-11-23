@@ -16,9 +16,13 @@ export default {
 </script>
 
 <style lang="sass">
-@import '~vuetify/src/styles/styles.sass'
+@import '~assets/styles.sass'
 
-.content
-  overflow-y: auto
-  height: calc(100vh - 56px)
+.v-app
+  > div.content
+    overflow-y: auto
+    height: calc(100vh - 56px)
+
+*
+  font-size: 9pt
 </style>
