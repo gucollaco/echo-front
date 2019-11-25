@@ -14,32 +14,35 @@ Nav Bar:
   ✔ i18n @done(19-11-13 16:34)
 Home:
   ☐ Onboarding
-  ☐ Aplicar layout
+  ✔ Aplicar layout @done(19-11-25 20:19)
     ✔ Background com circulos @done(19-11-22 18:18)
     ☐ Parallax?
-  ☐ Header
-    ☐ Notificacoes
-      ☐ Notificacoes nao lidas
-  ☐ Slider de super eventos
-    ☐ Animacao
-    ☐ Slider de eventos
-      ☐ Animacao
+  ✔ Header @done(19-11-25 20:19)
+    ✔ Notificacoes @done(19-11-25 20:19)
+      ✔ Notificacoes nao lidas @done(19-11-25 20:19)
+  ✔ Slider de super eventos @done(19-11-25 20:19)
+    ✔ Animacao @done(19-11-25 20:19)
+    ✔ Slider de eventos @done(19-11-25 20:19)
+      ✔ Animacao @done(19-11-25 20:19)
       ☐ Animacao para abrir /event
-  ☐ Explore
-    ☐ Eventos
+  ✔ Explore @done(19-11-25 20:19)
+    ✔ Eventos @done(19-11-25 20:19)
       ☐ Animacao para abrir /event
 Event:
-  ☐ Aplicar layout
+  ✔ Aplicar layout @done(19-11-25 20:19)
   ☐ Onboarding
-  ☐ Back variant
-    ☐ Back to super event
+  ✔ Back variant @done(19-11-25 20:19)
+    ✔ Back to super event @done(19-11-25 20:19)
     ☐ Back to explore
     ☐ Back to agenda
-  ☐ Follow
-  ☐ Reminders
+  ✔ Follow @done(19-11-25 20:19)
+  ✔ Reminders @done(19-11-25 20:19)
   ☐ Checkin
   ☐ Ver mais -> place
   ☐ Informar ERRO
+  ☐ Ao clicar no title do body, copiar informacoes
+  ☐ Ao clicar no text do body, copiar informacoes
+  ☐ Ao clicar no title do place, copiar informacoes
 Place:
   ☐ Design
 Profile:

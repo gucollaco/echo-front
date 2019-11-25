@@ -29,7 +29,7 @@ export default {
   /*
    ** Plugins to load before mounting the App
    */
-  plugins: [],
+  plugins: ["~/plugins/VuetifyToast"],
   /*
    ** Nuxt.js dev-modules
    */
@@ -51,6 +51,7 @@ export default {
    ** Nuxt.js modules
    */
   modules: [
+    "@nuxtjs/svg",
     "@nuxtjs/pwa",
     [
       "nuxt-i18n",

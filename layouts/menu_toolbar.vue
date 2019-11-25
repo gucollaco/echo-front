@@ -1,5 +1,6 @@
 <template>
   <v-app>
+    <ech-header></ech-header>
     <div ref="content" class="content">
       <nuxt />
     </div>
@@ -14,7 +15,7 @@ import HeaderVue from "../components/Header.vue"
 
 export default {
   // eslint-disable-next-line vue/no-unused-components
-  components: { BottomNav },
+  components: { BottomNav, "ech-header": HeaderVue },
   data() {
     return {}
   },
@@ -38,6 +39,4 @@ export default {
 
 .v-application--wrap::v-deep
   > div.content
-    overflow-y: auto
-    height: calc(100vh - 56px)
 </style>

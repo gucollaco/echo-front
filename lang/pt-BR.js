@@ -26,7 +26,8 @@ export default {
   home: {
     notifications: "Você tem novas notificações",
     curated_by: "Oferecimento",
-    holiday: "Feriado"
+    holiday: "Feriado",
+    no_events: "Nenhuma atividade disponível"
   },
   login: {
     email: "Email Unifesp",
