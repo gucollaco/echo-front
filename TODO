@@ -60,3 +60,28 @@ WALKTHROUGH:
   ☐ Implementar o walkthrough
 i18n:
   ☐ Como vai funcionar com o moment?
+Prototype:
+  Login:
+    ☐ Onboarding do esqueci minha senha
+    ☐ Onboarding explicando que é o email unifesp
+    ☐ Evento do botão entrar levar para home nova
+  Home:
+    ☐ Tela de notificações
+    ☐ Clique do card do carousel direcionar pra tela do evento
+  Calendar:
+    ☐ Clicar no card do event direcionar pra tela do evento
+    ☐ Tela de adicionar evento na agenda
+    ☐ Remover card de evento
+    ☐ Evento do botão entrar levar para home nova
+  Food:
+    ☐ Chevron entre os dias
+    ☐ Evento do click no dia da semana
+    ☐ Evento do botão entrar levar para home nova
+  Classes:
+    ☐ Tela de adicionar aula
+    ☐ Ao clicar em um evento dentro da aula, direcionar pra tela do evento
+    ☐ Evento do botão entrar levar para home nova
+  Profile:
+    ☐ Rework
+    ☐ Configuração do lado (menu hamburguer)
+    ☐ Evento do botão entrar levar para home nova
