@@ -1,22 +1,5 @@
 # echo-front
 
-> My first-rate Nuxt.js project
+> On this project, we've made some user experiences improvements in comparison to the previous version developed. The layout is done, but the integration with the backend hasn't been developed yet.
 
-## Build Setup
-
-``` bash
-# install dependencies
-$ yarn install
-
-# serve with hot reload at localhost:3000
-$ yarn dev
-
-# build for production and launch server
-$ yarn build
-$ yarn start
-
-# generate static project
-$ yarn generate
-```
-
-For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).
+> The previous version can be accessed [here](https://github.com/dsalexan/echo).
